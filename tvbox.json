@@ -13,16 +13,6 @@
   ],
   "sites": [
     {
-      "key": "豆豆",
-      "name": "豆瓣高分",
-      "type": 3,
-      "api": "csp_DouDouGuard",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "indexs": 1
-    },
-    {
       "key": "yzzy",
       "name": "影视站点",
       "type": 1,
