@@ -1,16 +1,27 @@
 {
   "spider": "",
   "wallpaper": "",
+  "logo": "",
   "lives": [
     {
       "name": "直播源",
       "type": 0,
-      "url": "https://gh-proxy.com/https://github.com/tardlk/iptv/blob/main/tv.m3u",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/tardlk/iptv/main/tv.m3u",
       "epg": "",
       "logo": ""
     }
   ],
   "sites": [
+    {
+      "key": "豆豆",
+      "name": "豆瓣高分",
+      "type": 3,
+      "api": "csp_DouDouGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "indexs": 1
+    },
     {
       "key": "yzzy",
       "name": "影视站点",
