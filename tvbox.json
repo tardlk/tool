@@ -16,13 +16,11 @@
   ],
   "lives": [
     {
-      "name": "live",
+      "name": "IPTV",
       "type": 0,
-      "playerType": 1,
-      "url": "https://gh-proxy.com/https://github.com/tardlk/iptv/blob/main/tv.txt",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "editing": false
+      "url": "https://gh-proxy.com/https://github.com/tardlk/iptv/blob/main/tv.m3u",
+      "epg": "",
+      "logo": ""
     }
   ],
   "parses": [],
