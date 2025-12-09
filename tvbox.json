@@ -4,23 +4,6 @@
   "logo": "",
   "sites": [
     {
-      "key": "drpy_js_豆瓣",
-      "name": "豆瓣",
-      "type": 3,
-      "api": "csp_Douban",
-      "searchable": 0,
-      "editing": false
-    },
-    {
-      "key": "豆瓣",
-      "name": "预告",
-      "type": 3,
-      "api": "csp_YGP",
-      "playerType": 2,
-      "searchable": 0,
-      "editing": false
-    },
-    {
       "name": "优质资源库",
       "type": 1,
       "api": "https://api.yzzy-api.com/inc/api_mac10.php",
