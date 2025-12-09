@@ -1,22 +1,24 @@
 {
-  "spider": "http://xhztv.top/xhz/jar/custom_spider.jar",
-  "wallpaper": "http://xhztv.top/images/bz.png",
-  "logo": "http://xhztv.top/images/logo.png",
+  "spider": "",
+  "wallpaper": "",
+  "logo": "",
   "sites": [
     {
       "key": "drpy_js_豆瓣",
-      "name": "🔍聚玩盒子-示例接口",
+      "name": "豆瓣",
       "type": 3,
       "api": "csp_Douban",
-      "searchable": 0
+      "searchable": 0,
+      "editing": false
     },
     {
       "key": "豆瓣",
-      "name": "🐼┃豆瓣┃预告",
+      "name": "预告",
       "type": 3,
       "api": "csp_YGP",
       "playerType": 2,
-      "searchable": 0
+      "searchable": 0,
+      "editing": false
     },
     {
       "name": "优质资源库",
