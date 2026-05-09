@@ -1,0 +1,1535 @@
+# Clash 配置文件
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+secret: ""
+
+# DNS 配置
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+  fallback:
+    - 8.8.4.4
+    - 1.0.0.1
+
+# 代理节点
+proxies:
+  - name: bucharest-blade7-rack483
+    type: http
+    server: 84.239.49.59
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade14-rack489
+    type: http
+    server: 84.239.49.209
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade17-rack488
+    type: http
+    server: 84.239.49.191
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade9-rack489
+    type: http
+    server: 84.239.49.204
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade15-rack487
+    type: http
+    server: 84.239.49.168
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade5-rack491
+    type: http
+    server: 84.239.49.242
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack485
+    type: http
+    server: 84.239.14.165
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack490
+    type: http
+    server: 84.239.49.220
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack488
+    type: http
+    server: 84.239.49.176
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade10-rack483
+    type: http
+    server: 84.239.49.62
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade6-rack453
+    type: http
+    server: 193.176.84.34
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade3-rack482
+    type: http
+    server: 84.239.49.39
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade16-rack491
+    type: http
+    server: 84.239.49.253
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade19-rack490
+    type: http
+    server: 84.239.49.235
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade10-rack490
+    type: http
+    server: 84.239.49.226
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade3-rack490
+    type: http
+    server: 84.239.49.219
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade3-rack483
+    type: http
+    server: 84.239.49.55
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade14-rack482
+    type: http
+    server: 84.239.49.50
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade7-rack452
+    type: http
+    server: 193.176.84.22
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade5-rack451
+    type: http
+    server: 193.176.84.7
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack483
+    type: http
+    server: 84.239.49.54
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade11-rack485
+    type: http
+    server: 84.239.14.172
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade20-rack490
+    type: http
+    server: 84.239.49.236
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade18-rack489
+    type: http
+    server: 84.239.49.213
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade8-rack483
+    type: http
+    server: 84.239.49.60
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade15-rack484
+    type: http
+    server: 84.239.14.160
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade12-rack482
+    type: http
+    server: 84.239.49.48
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack483
+    type: http
+    server: 84.239.49.53
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade18-rack488
+    type: http
+    server: 84.239.49.192
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade3-rack485
+    type: http
+    server: 84.239.14.164
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade11-rack482
+    type: http
+    server: 84.239.49.47
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade6-rack488
+    type: http
+    server: 84.239.49.180
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade7-rack451
+    type: http
+    server: 193.176.84.9
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack489
+    type: http
+    server: 84.239.49.199
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade8-rack489
+    type: http
+    server: 84.239.49.203
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack484
+    type: http
+    server: 84.239.14.149
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade7-rack490
+    type: http
+    server: 84.239.49.223
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack490
+    type: http
+    server: 84.239.49.217
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade3-rack487
+    type: http
+    server: 84.239.49.156
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade9-rack488
+    type: http
+    server: 84.239.49.183
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack490
+    type: http
+    server: 84.239.49.218
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade11-rack452
+    type: http
+    server: 193.176.84.26
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade10-rack484
+    type: http
+    server: 84.239.14.155
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade6-rack483
+    type: http
+    server: 84.239.49.58
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade5-rack488
+    type: http
+    server: 84.239.49.179
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade15-rack485
+    type: http
+    server: 84.239.14.176
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade17-rack487
+    type: http
+    server: 84.239.49.170
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade17-rack490
+    type: http
+    server: 84.239.49.233
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade20-rack488
+    type: http
+    server: 84.239.49.194
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade7-rack488
+    type: http
+    server: 84.239.49.181
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade11-rack484
+    type: http
+    server: 84.239.14.156
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade12-rack453
+    type: http
+    server: 193.176.84.40
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack488
+    type: http
+    server: 84.239.49.178
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack491
+    type: http
+    server: 84.239.49.238
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade9-rack487
+    type: http
+    server: 84.239.49.162
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade20-rack487
+    type: http
+    server: 84.239.49.173
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade17-rack491
+    type: http
+    server: 84.239.49.254
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade10-rack487
+    type: http
+    server: 84.239.49.163
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade8-rack453
+    type: http
+    server: 193.176.84.36
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade18-rack490
+    type: http
+    server: 84.239.49.234
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade8-rack490
+    type: http
+    server: 84.239.49.224
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade9-rack485
+    type: http
+    server: 84.239.14.170
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade3-rack451
+    type: http
+    server: 193.176.84.5
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack482
+    type: http
+    server: 84.239.49.38
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade12-rack451
+    type: http
+    server: 193.176.84.14
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack487
+    type: http
+    server: 84.239.49.154
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade6-rack451
+    type: http
+    server: 193.176.84.8
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack452
+    type: http
+    server: 193.176.84.16
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade6-rack452
+    type: http
+    server: 193.176.84.21
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack484
+    type: http
+    server: 84.239.14.146
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade8-rack484
+    type: http
+    server: 84.239.14.153
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade13-rack482
+    type: http
+    server: 84.239.49.49
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack489
+    type: http
+    server: 84.239.49.197
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade14-rack484
+    type: http
+    server: 84.239.14.159
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade13-rack487
+    type: http
+    server: 84.239.49.166
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade12-rack489
+    type: http
+    server: 84.239.49.207
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack453
+    type: http
+    server: 193.176.84.32
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade14-rack490
+    type: http
+    server: 84.239.49.230
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade3-rack491
+    type: http
+    server: 84.239.49.240
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade12-rack452
+    type: http
+    server: 193.176.84.27
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack484
+    type: http
+    server: 84.239.14.147
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade13-rack488
+    type: http
+    server: 84.239.49.187
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade19-rack489
+    type: http
+    server: 84.239.49.214
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade6-rack482
+    type: http
+    server: 84.239.49.42
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade9-rack452
+    type: http
+    server: 193.176.84.24
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade16-rack489
+    type: http
+    server: 84.239.49.211
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade5-rack485
+    type: http
+    server: 84.239.14.166
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade8-rack491
+    type: http
+    server: 84.239.49.245
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade6-rack490
+    type: http
+    server: 84.239.49.222
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade11-rack491
+    type: http
+    server: 84.239.49.248
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade9-rack451
+    type: http
+    server: 193.176.84.11
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack487
+    type: http
+    server: 84.239.49.155
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade12-rack491
+    type: http
+    server: 84.239.49.249
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack485
+    type: http
+    server: 84.239.14.162
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade15-rack490
+    type: http
+    server: 84.239.49.231
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade10-rack491
+    type: http
+    server: 84.239.49.247
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade11-rack453
+    type: http
+    server: 193.176.84.39
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack452
+    type: http
+    server: 193.176.84.19
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade12-rack484
+    type: http
+    server: 84.239.14.157
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade11-rack489
+    type: http
+    server: 84.239.49.206
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade13-rack484
+    type: http
+    server: 84.239.14.158
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade9-rack490
+    type: http
+    server: 84.239.49.225
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade7-rack482
+    type: http
+    server: 84.239.49.43
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade14-rack485
+    type: http
+    server: 84.239.14.175
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade5-rack453
+    type: http
+    server: 193.176.84.33
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade12-rack490
+    type: http
+    server: 84.239.49.228
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade18-rack487
+    type: http
+    server: 84.239.49.171
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade10-rack453
+    type: http
+    server: 193.176.84.38
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade11-rack490
+    type: http
+    server: 84.239.49.227
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade12-rack487
+    type: http
+    server: 84.239.49.165
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade6-rack485
+    type: http
+    server: 84.239.14.167
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack483
+    type: http
+    server: 84.239.49.56
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack489
+    type: http
+    server: 84.239.49.196
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade8-rack452
+    type: http
+    server: 193.176.84.23
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack451
+    type: http
+    server: 193.176.84.4
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack452
+    type: http
+    server: 193.176.84.17
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack482
+    type: http
+    server: 84.239.49.37
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade20-rack489
+    type: http
+    server: 84.239.49.215
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade7-rack491
+    type: http
+    server: 84.239.49.244
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade8-rack488
+    type: http
+    server: 84.239.49.182
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade13-rack490
+    type: http
+    server: 84.239.49.229
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade6-rack489
+    type: http
+    server: 84.239.49.201
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack488
+    type: http
+    server: 84.239.49.175
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade9-rack484
+    type: http
+    server: 84.239.14.154
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade15-rack491
+    type: http
+    server: 84.239.49.252
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade5-rack482
+    type: http
+    server: 84.239.49.41
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade5-rack452
+    type: http
+    server: 193.176.84.20
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade13-rack489
+    type: http
+    server: 84.239.49.208
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack491
+    type: http
+    server: 84.239.49.241
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade11-rack487
+    type: http
+    server: 84.239.49.164
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade5-rack483
+    type: http
+    server: 84.239.49.57
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade14-rack487
+    type: http
+    server: 84.239.49.167
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade5-rack489
+    type: http
+    server: 84.239.49.200
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade6-rack487
+    type: http
+    server: 84.239.49.159
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade7-rack489
+    type: http
+    server: 84.239.49.202
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack451
+    type: http
+    server: 193.176.84.6
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack453
+    type: http
+    server: 193.176.84.30
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade14-rack491
+    type: http
+    server: 84.239.49.251
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack485
+    type: http
+    server: 84.239.14.163
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade3-rack453
+    type: http
+    server: 193.176.84.31
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade8-rack487
+    type: http
+    server: 84.239.49.161
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade9-rack453
+    type: http
+    server: 193.176.84.37
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade15-rack488
+    type: http
+    server: 84.239.49.189
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack482
+    type: http
+    server: 84.239.49.40
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack451
+    type: http
+    server: 193.176.84.3
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade7-rack453
+    type: http
+    server: 193.176.84.35
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade12-rack488
+    type: http
+    server: 84.239.49.186
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade7-rack487
+    type: http
+    server: 84.239.49.160
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade10-rack451
+    type: http
+    server: 193.176.84.12
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade10-rack452
+    type: http
+    server: 193.176.84.25
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade10-rack488
+    type: http
+    server: 84.239.49.184
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade1-rack453
+    type: http
+    server: 193.176.84.29
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade4-rack487
+    type: http
+    server: 84.239.49.157
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade7-rack484
+    type: http
+    server: 84.239.14.152
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade6-rack484
+    type: http
+    server: 84.239.14.151
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade3-rack484
+    type: http
+    server: 84.239.14.148
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade13-rack485
+    type: http
+    server: 84.239.14.174
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade3-rack489
+    type: http
+    server: 84.239.49.198
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade17-rack489
+    type: http
+    server: 84.239.49.212
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade2-rack491
+    type: http
+    server: 84.239.49.239
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+  - name: bucharest-blade11-rack488
+    type: http
+    server: 84.239.49.185
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: www.bing.com
+
+# 代理组
+proxy-groups:
+  - name: Proxy
+    type: select
+    proxies:
+      - Auto
+      - DIRECT
+      - bucharest-blade7-rack483
+      - bucharest-blade14-rack489
+      - bucharest-blade17-rack488
+      - bucharest-blade9-rack489
+      - bucharest-blade15-rack487
+      - bucharest-blade5-rack491
+      - bucharest-blade4-rack485
+      - bucharest-blade4-rack490
+      - bucharest-blade2-rack488
+      - bucharest-blade10-rack483
+      - bucharest-blade6-rack453
+      - bucharest-blade3-rack482
+      - bucharest-blade16-rack491
+      - bucharest-blade19-rack490
+      - bucharest-blade10-rack490
+      - bucharest-blade3-rack490
+      - bucharest-blade3-rack483
+      - bucharest-blade14-rack482
+      - bucharest-blade7-rack452
+      - bucharest-blade5-rack451
+      - bucharest-blade2-rack483
+      - bucharest-blade11-rack485
+      - bucharest-blade20-rack490
+      - bucharest-blade18-rack489
+      - bucharest-blade8-rack483
+      - bucharest-blade15-rack484
+      - bucharest-blade12-rack482
+      - bucharest-blade1-rack483
+      - bucharest-blade18-rack488
+      - bucharest-blade3-rack485
+      - bucharest-blade11-rack482
+      - bucharest-blade6-rack488
+      - bucharest-blade7-rack451
+      - bucharest-blade4-rack489
+      - bucharest-blade8-rack489
+      - bucharest-blade4-rack484
+      - bucharest-blade7-rack490
+      - bucharest-blade1-rack490
+      - bucharest-blade3-rack487
+      - bucharest-blade9-rack488
+      - bucharest-blade2-rack490
+      - bucharest-blade11-rack452
+      - bucharest-blade10-rack484
+      - bucharest-blade6-rack483
+      - bucharest-blade5-rack488
+      - bucharest-blade15-rack485
+      - bucharest-blade17-rack487
+      - bucharest-blade17-rack490
+      - bucharest-blade20-rack488
+      - bucharest-blade7-rack488
+      - bucharest-blade11-rack484
+      - bucharest-blade12-rack453
+      - bucharest-blade4-rack488
+      - bucharest-blade1-rack491
+      - bucharest-blade9-rack487
+      - bucharest-blade20-rack487
+      - bucharest-blade17-rack491
+      - bucharest-blade10-rack487
+      - bucharest-blade8-rack453
+      - bucharest-blade18-rack490
+      - bucharest-blade8-rack490
+      - bucharest-blade9-rack485
+      - bucharest-blade3-rack451
+      - bucharest-blade2-rack482
+      - bucharest-blade12-rack451
+      - bucharest-blade1-rack487
+      - bucharest-blade6-rack451
+      - bucharest-blade1-rack452
+      - bucharest-blade6-rack452
+      - bucharest-blade1-rack484
+      - bucharest-blade8-rack484
+      - bucharest-blade13-rack482
+      - bucharest-blade2-rack489
+      - bucharest-blade14-rack484
+      - bucharest-blade13-rack487
+      - bucharest-blade12-rack489
+      - bucharest-blade4-rack453
+      - bucharest-blade14-rack490
+      - bucharest-blade3-rack491
+      - bucharest-blade12-rack452
+      - bucharest-blade2-rack484
+      - bucharest-blade13-rack488
+      - bucharest-blade19-rack489
+      - bucharest-blade6-rack482
+      - bucharest-blade9-rack452
+      - bucharest-blade16-rack489
+      - bucharest-blade5-rack485
+      - bucharest-blade8-rack491
+      - bucharest-blade6-rack490
+      - bucharest-blade11-rack491
+      - bucharest-blade9-rack451
+      - bucharest-blade2-rack487
+      - bucharest-blade12-rack491
+      - bucharest-blade1-rack485
+      - bucharest-blade15-rack490
+      - bucharest-blade10-rack491
+      - bucharest-blade11-rack453
+      - bucharest-blade4-rack452
+      - bucharest-blade12-rack484
+      - bucharest-blade11-rack489
+      - bucharest-blade13-rack484
+      - bucharest-blade9-rack490
+      - bucharest-blade7-rack482
+      - bucharest-blade14-rack485
+      - bucharest-blade5-rack453
+      - bucharest-blade12-rack490
+      - bucharest-blade18-rack487
+      - bucharest-blade10-rack453
+      - bucharest-blade11-rack490
+      - bucharest-blade12-rack487
+      - bucharest-blade6-rack485
+      - bucharest-blade4-rack483
+      - bucharest-blade1-rack489
+      - bucharest-blade8-rack452
+      - bucharest-blade2-rack451
+      - bucharest-blade2-rack452
+      - bucharest-blade1-rack482
+      - bucharest-blade20-rack489
+      - bucharest-blade7-rack491
+      - bucharest-blade8-rack488
+      - bucharest-blade13-rack490
+      - bucharest-blade6-rack489
+      - bucharest-blade1-rack488
+      - bucharest-blade9-rack484
+      - bucharest-blade15-rack491
+      - bucharest-blade5-rack482
+      - bucharest-blade5-rack452
+      - bucharest-blade13-rack489
+      - bucharest-blade4-rack491
+      - bucharest-blade11-rack487
+      - bucharest-blade5-rack483
+      - bucharest-blade14-rack487
+      - bucharest-blade5-rack489
+      - bucharest-blade6-rack487
+      - bucharest-blade7-rack489
+      - bucharest-blade4-rack451
+      - bucharest-blade2-rack453
+      - bucharest-blade14-rack491
+      - bucharest-blade2-rack485
+      - bucharest-blade3-rack453
+      - bucharest-blade8-rack487
+      - bucharest-blade9-rack453
+      - bucharest-blade15-rack488
+      - bucharest-blade4-rack482
+      - bucharest-blade1-rack451
+      - bucharest-blade7-rack453
+      - bucharest-blade12-rack488
+      - bucharest-blade7-rack487
+      - bucharest-blade10-rack451
+      - bucharest-blade10-rack452
+      - bucharest-blade10-rack488
+      - bucharest-blade1-rack453
+      - bucharest-blade4-rack487
+      - bucharest-blade7-rack484
+      - bucharest-blade6-rack484
+      - bucharest-blade3-rack484
+      - bucharest-blade13-rack485
+      - bucharest-blade3-rack489
+      - bucharest-blade17-rack489
+      - bucharest-blade2-rack491
+      - bucharest-blade11-rack488
+  - name: Auto
+    type: url-test
+    proxies:
+      - bucharest-blade7-rack483
+      - bucharest-blade14-rack489
+      - bucharest-blade17-rack488
+      - bucharest-blade9-rack489
+      - bucharest-blade15-rack487
+      - bucharest-blade5-rack491
+      - bucharest-blade4-rack485
+      - bucharest-blade4-rack490
+      - bucharest-blade2-rack488
+      - bucharest-blade10-rack483
+      - bucharest-blade6-rack453
+      - bucharest-blade3-rack482
+      - bucharest-blade16-rack491
+      - bucharest-blade19-rack490
+      - bucharest-blade10-rack490
+      - bucharest-blade3-rack490
+      - bucharest-blade3-rack483
+      - bucharest-blade14-rack482
+      - bucharest-blade7-rack452
+      - bucharest-blade5-rack451
+      - bucharest-blade2-rack483
+      - bucharest-blade11-rack485
+      - bucharest-blade20-rack490
+      - bucharest-blade18-rack489
+      - bucharest-blade8-rack483
+      - bucharest-blade15-rack484
+      - bucharest-blade12-rack482
+      - bucharest-blade1-rack483
+      - bucharest-blade18-rack488
+      - bucharest-blade3-rack485
+      - bucharest-blade11-rack482
+      - bucharest-blade6-rack488
+      - bucharest-blade7-rack451
+      - bucharest-blade4-rack489
+      - bucharest-blade8-rack489
+      - bucharest-blade4-rack484
+      - bucharest-blade7-rack490
+      - bucharest-blade1-rack490
+      - bucharest-blade3-rack487
+      - bucharest-blade9-rack488
+      - bucharest-blade2-rack490
+      - bucharest-blade11-rack452
+      - bucharest-blade10-rack484
+      - bucharest-blade6-rack483
+      - bucharest-blade5-rack488
+      - bucharest-blade15-rack485
+      - bucharest-blade17-rack487
+      - bucharest-blade17-rack490
+      - bucharest-blade20-rack488
+      - bucharest-blade7-rack488
+      - bucharest-blade11-rack484
+      - bucharest-blade12-rack453
+      - bucharest-blade4-rack488
+      - bucharest-blade1-rack491
+      - bucharest-blade9-rack487
+      - bucharest-blade20-rack487
+      - bucharest-blade17-rack491
+      - bucharest-blade10-rack487
+      - bucharest-blade8-rack453
+      - bucharest-blade18-rack490
+      - bucharest-blade8-rack490
+      - bucharest-blade9-rack485
+      - bucharest-blade3-rack451
+      - bucharest-blade2-rack482
+      - bucharest-blade12-rack451
+      - bucharest-blade1-rack487
+      - bucharest-blade6-rack451
+      - bucharest-blade1-rack452
+      - bucharest-blade6-rack452
+      - bucharest-blade1-rack484
+      - bucharest-blade8-rack484
+      - bucharest-blade13-rack482
+      - bucharest-blade2-rack489
+      - bucharest-blade14-rack484
+      - bucharest-blade13-rack487
+      - bucharest-blade12-rack489
+      - bucharest-blade4-rack453
+      - bucharest-blade14-rack490
+      - bucharest-blade3-rack491
+      - bucharest-blade12-rack452
+      - bucharest-blade2-rack484
+      - bucharest-blade13-rack488
+      - bucharest-blade19-rack489
+      - bucharest-blade6-rack482
+      - bucharest-blade9-rack452
+      - bucharest-blade16-rack489
+      - bucharest-blade5-rack485
+      - bucharest-blade8-rack491
+      - bucharest-blade6-rack490
+      - bucharest-blade11-rack491
+      - bucharest-blade9-rack451
+      - bucharest-blade2-rack487
+      - bucharest-blade12-rack491
+      - bucharest-blade1-rack485
+      - bucharest-blade15-rack490
+      - bucharest-blade10-rack491
+      - bucharest-blade11-rack453
+      - bucharest-blade4-rack452
+      - bucharest-blade12-rack484
+      - bucharest-blade11-rack489
+      - bucharest-blade13-rack484
+      - bucharest-blade9-rack490
+      - bucharest-blade7-rack482
+      - bucharest-blade14-rack485
+      - bucharest-blade5-rack453
+      - bucharest-blade12-rack490
+      - bucharest-blade18-rack487
+      - bucharest-blade10-rack453
+      - bucharest-blade11-rack490
+      - bucharest-blade12-rack487
+      - bucharest-blade6-rack485
+      - bucharest-blade4-rack483
+      - bucharest-blade1-rack489
+      - bucharest-blade8-rack452
+      - bucharest-blade2-rack451
+      - bucharest-blade2-rack452
+      - bucharest-blade1-rack482
+      - bucharest-blade20-rack489
+      - bucharest-blade7-rack491
+      - bucharest-blade8-rack488
+      - bucharest-blade13-rack490
+      - bucharest-blade6-rack489
+      - bucharest-blade1-rack488
+      - bucharest-blade9-rack484
+      - bucharest-blade15-rack491
+      - bucharest-blade5-rack482
+      - bucharest-blade5-rack452
+      - bucharest-blade13-rack489
+      - bucharest-blade4-rack491
+      - bucharest-blade11-rack487
+      - bucharest-blade5-rack483
+      - bucharest-blade14-rack487
+      - bucharest-blade5-rack489
+      - bucharest-blade6-rack487
+      - bucharest-blade7-rack489
+      - bucharest-blade4-rack451
+      - bucharest-blade2-rack453
+      - bucharest-blade14-rack491
+      - bucharest-blade2-rack485
+      - bucharest-blade3-rack453
+      - bucharest-blade8-rack487
+      - bucharest-blade9-rack453
+      - bucharest-blade15-rack488
+      - bucharest-blade4-rack482
+      - bucharest-blade1-rack451
+      - bucharest-blade7-rack453
+      - bucharest-blade12-rack488
+      - bucharest-blade7-rack487
+      - bucharest-blade10-rack451
+      - bucharest-blade10-rack452
+      - bucharest-blade10-rack488
+      - bucharest-blade1-rack453
+      - bucharest-blade4-rack487
+      - bucharest-blade7-rack484
+      - bucharest-blade6-rack484
+      - bucharest-blade3-rack484
+      - bucharest-blade13-rack485
+      - bucharest-blade3-rack489
+      - bucharest-blade17-rack489
+      - bucharest-blade2-rack491
+      - bucharest-blade11-rack488
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+  - name: AdBlock
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+# 分流规则
+rules:
+  # 广告屏蔽
+  - DOMAIN-SUFFIX,adservice.google.com,AdBlock
+  - DOMAIN-SUFFIX,doubleclick.net,AdBlock
+  - DOMAIN-SUFFIX,ads.yahoo.com,AdBlock
+  - DOMAIN-SUFFIX,ad.doubleclick.net,AdBlock
+  - DOMAIN-SUFFIX,googleadservices.com,AdBlock
+  - DOMAIN-KEYWORD,ads,AdBlock
+  - DOMAIN-KEYWORD,ad,AdBlock
+  - DOMAIN-KEYWORD,track,AdBlock
+  - DOMAIN-KEYWORD,analytics,AdBlock
+
+  # 大陆直连
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-SUFFIX,com.cn,DIRECT
+  - DOMAIN-SUFFIX,org.cn,DIRECT
+  - DOMAIN-SUFFIX,gov.cn,DIRECT
+  - DOMAIN-SUFFIX,edu.cn,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-SUFFIX,126.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,alipay.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - GEOIP,CN,DIRECT
+
+  # Apple 相关服务直连（优化体验）
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,me.com,DIRECT
+
+  # 其他流量走代理
+  - MATCH,Proxy
