@@ -6,7 +6,7 @@ external-controller: :9090
 
 # ----------------- 1. 单个普通 HTTP 节点 -----------------
 proxies:
-  - {name: "yyty-http代理", server: yyty.com, port: 57890, type: http}
+  - {name: "HOME", server: tardlk.com, port: 57890, type: http}
 
 # ----------------- 2. 策略组配置 -----------------
 proxy-groups:
