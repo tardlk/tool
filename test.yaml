@@ -1,0 +1,24 @@
+mixed-port: 7890
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+
+# ----------------- 1. 单个节点配置 -----------------
+proxies:
+  - {name: bucharest-blade7-rack483, server: 84.239.49.59, port: 9002, type: http, tls: true, skip-cert-verify: true, tfo: false}
+
+# ----------------- 2. 策略组配置 -----------------
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - bucharest-blade7-rack483
+      - DIRECT
+
+# ----------------- 3. 路由分流规则 -----------------
+rules:
+  # 局域网和本地流量直接连接
+  - GEOIP,LAN,DIRECT
+  # 其余所有流量全部走上面保留的节点
+  - MATCH,🚀 节点选择
